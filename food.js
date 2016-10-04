@@ -30,7 +30,17 @@ function loadFood () {
 	console.log("dogFoodLoop", dogFoodLoop);
 }
 
-var dogBrandsReq = new XMLHttpRequest();
-dogBrandsReq.addEventListener("load", loadFood);
-dogBrandsReq.open("GET", "dogfood.json");
-dogBrandsReq.send();
+function loadCatFood () {
+	catFood = JSON.parse(this.response).cat_brands;
+	var contentElement = document.getElementById("output");
+	var displayDiv = "";
+	var types = [];
+	for (var i = 0; i < catFood.length; i++) {
+		var catFoodLoop = catFood[i];
+
+		displayDiv += 
+
+var catBrandsReq = new XMLHttpRequest();
+catBrandsReq.addEventListener("load", loadFood);
+catBrandsReq.open("GET", "catfood.json");
+catBrandsReq.send();
