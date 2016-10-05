@@ -34,19 +34,27 @@ function loadCatFood () {
 	catFood = JSON.parse(this.response).cat_brands;
 	var contentCatElement = document.getElementById("cat-output");
 	var catDisplayDiv = "";
+	var breedsDisplay = "";
 	catDisplayDiv += `<h1>CAT STUFF</h1>`
 	for (var i = 0; i < catFood.length; i++) {
 		var catFoodLoop = catFood[i];
-			
+		for (var i = 0; i < catFoodLoop.breeds.length; i++) {
+			var breedsLoop = catFoodLoop.breeds[i]
+		
+
 		catDisplayDiv += 
 		`<div>
 		<h2>${catFoodLoop.name}</h2>
 		<hr>
-		<h2>${catFoodLoop.breeds[0]}</h2>
+		</div>`
+		breedsDisplay +=
+		`<div>
+		<h2>${breedsLoop}</h2>
 		</div>`
 
-contentCatElement.innerHTML = catDisplayDiv;
+contentCatElement.innerHTML = catDisplayDiv + breedsDisplay;
 	}
+}
 	console.log("catFoodLoop", catFoodLoop)
 }
 
