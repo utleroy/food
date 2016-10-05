@@ -1,64 +1,68 @@
-Brand   Breeds  Types / Prices
-Purrina Siamese, Bengal, Showshoe, Munchkin Kitten, 20oz, 19.99 : Kitten, 32oz, 26.99 : Kitten, 64oz, 34.99 : Elite, 20oz, 24.99 : Elite, 40oz, 47.99
-Meow Meal   Manx, Egyptian Mau, Himalayan, Rag Doll Kitten, 24oz, 19.99 : Kitten, 48oz, 34.99 : Adult, 28oz, 22.99 : Adult, 56oz, 40.99{
+{
   "cat_brands": [
     {
-      "name": "Purrina",
-      "breeds": [
+      "name": "purrina",
+      "breeds": ["siamese", "bengal", "showshoe", "munchkin"],
+      "types": [
         {
-          "type": "all_natural",
+          "type": "kitten",
           "volumes": [
             {
+              "name": "30oz",
+              "price": 19.99
+            },
+            {
               "name": "32oz",
-              "price": 9.99
+              "price": 26.99
             },
             {
               "name": "64oz",
-              "price": 17.99
+              "price": 34.99
             }
           ]
         },
         {
-          "type": "standard",
+          "type": "elite",
           "volumes": [
             {
-              "name": "58oz",
-              "price": 12.99
+              "name": "20oz",
+              "price": 24.99
             },
             {
-              "name": "72oz",
-              "price": 21.99
+              "name": "40oz",
+              "price": 47.99
             }
           ]
         }
       ]
     },
     {
-      "name": "Purina",
+      "name": "Meow Meal",
+      "breeds": ["Manx", "Egyptian Mau", "Himalayan", "Rag Doll"],
       "types": [
         {
-          "type": "puppy",
+          "type": "kitten",
           "volumes": [
             {
-              "name": "16oz",
-              "price": 8.99
+              "name": "24oz",
+              "price": 19.99
             },
             {
-              "name": "24oz",
-              "price": 14.99
+              "name": "48oz",
+              "price": 34.99
             }
           ]
         },
         {
-          "type": "standard",
+          "type": "adult",
           "volumes": [
             {
-              "name": "58oz",
-              "price": 19.99
+              "name": "28oz",
+              "price": 22.99
             },
             {
-              "name": "72oz",
-              "price": 24.99
+              "name": "56oz",
+              "price": 40.99
             }
           ]
         }
@@ -66,3 +70,5 @@ Meow Meal   Manx, Egyptian Mau, Himalayan, Rag Doll Kitten, 24oz, 19.99 : Kitten
     }
   ]
 }
+
+
