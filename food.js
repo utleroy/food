@@ -50,6 +50,8 @@ function loadCatFood () {
 		breedsDisplay +=
 		`<div>
 		<h2>${breedsLoop}</h2>
+		<h2>${catFoodLoop.breeds}</h2>
+		
 		</div>`
 
 contentCatElement.innerHTML = catDisplayDiv + breedsDisplay;
